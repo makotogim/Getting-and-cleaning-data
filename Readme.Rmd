@@ -1,0 +1,28 @@
+
+## Getting and Cleaning Data Course Project"
+
+Description of how to run the script
+------------------------------------
+
+This file describes how run_analysis.R script works.
+
+* First, unzip the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+* Save "run_analysis.R" in the previous folder and run the script.
+* A "tidy_data.txt" with the with the average of each variable for each activity and each subject is generated.
+
+Detail information about the script calculations
+------------------------------------------------
+
+* downloads require data from "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones "
+* Extract data from test and train folder
+* Combine data from X and Y files
+* Include the names on the features.txt file and creates column names for Y data files and Subject data
+* Merge both datasets
+* Extracts only the measurements on the mean and standard deviation for each measurement
+    * Find the columns of mean and std values
+    * Create a dataset only with the mean and data deviation measurements
+* Uses descriptive activity names to name the activities in the data set
+    * load activity names data
+    * Find activity id and create a new column with the activity name
+* Appropriately labels the data set with descriptive variable names
+* Creates a second, independent tidy data set with the average of each variable for each activity and each subject
